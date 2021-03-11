@@ -1,6 +1,6 @@
-import React from 'react'
-import ReactDOM from 'react-dom'
-
+import React from 'react';
+import ReactDOM from 'react-dom';
+import "./index.css";
 // let tick = () => {
 //     const element = (
 //         <div>
@@ -43,8 +43,8 @@ class Clock extends React.Component {
 
     render() {
         return (
-            <div>
-                <h1>Hello, world!</h1>
+            <div className="hi">
+                <h1>Hello, Planet Earth!</h1>
                 <h2>It is {this.state.date.toLocaleTimeString()}.</h2>
             </div>
         );
@@ -53,12 +53,8 @@ class Clock extends React.Component {
 
 let App = () => {
     return (
-        <div>
-            <Clock/>
-            <Clock/>
-            <Clock/>
-            <Clock/>
-            <Clock/>
+        <div className="myDiv">
+            <Clock />
         </div>
     );
 }
